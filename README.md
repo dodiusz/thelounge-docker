@@ -1,10 +1,6 @@
-![The Lounge](https://raw.githubusercontent.com/thelounge/thelounge.github.io/master/assets/logos/logo/TL_Grey%26Yellow_Vertical_logotype_Transparent_Bg/TL_Grey%26Yellow_Vertical_logotype_Transparent_Bg.png)
+#### Docker image for the Lounge with ircnet improvements
 
-#### Docker image for The Lounge, a modern web IRC client designed for self-hosting
-
-**[Website](https://thelounge.chat/) • [Docs](https://thelounge.chat/docs) • [Demo](https://demo.thelounge.chat/)**
-
-[![#thelounge IRC channel on Libera.Chat"](https://img.shields.io/badge/Libera.Chat-%23thelounge-415364.svg?colorA=ff9e18&style=flat-square)](https://demo.thelounge.chat/) [![Total pulls on Docker](https://img.shields.io/docker/pulls/thelounge/thelounge.svg?style=flat-square&maxAge=3600)](https://hub.docker.com/r/thelounge/thelounge/) [![Total stars on Docker](https://img.shields.io/docker/stars/thelounge/thelounge.svg?colorB=007dc7&style=flat-square&maxAge=3600)](https://hub.docker.com/r/thelounge/thelounge/)
+**[MASS CLOSE MSGS FIX](https://streamable.com/1n5yjd)**
 
 ---
 
@@ -22,8 +18,7 @@ To learn more about configuration, usage and features of The Lounge, take a look
 
 Images are available in the following registries:
 
--   [ghcr.io](https://github.com/thelounge/thelounge-docker/pkgs/container/thelounge): `ghcr.io/thelounge/thelounge`
--   [DockerHub](https://hub.docker.com/r/thelounge/thelounge): `thelounge/thelounge`
+-   [ghcr.io](https://github.com/thelounge/thelounge-docker/pkgs/container/thelounge): `ghcr.io/dodiusz/thelounge`
 
 ### Running a container
 
@@ -41,7 +36,7 @@ $ docker run --detach \
              --publish 9000:9000 \
              --volume ~/.thelounge:/var/opt/thelounge \
              --restart always \
-             ghcr.io/thelounge/thelounge:latest
+             ghcr.io/dodiusz/thelounge:latest
 ```
 
 ### Executing commands in the container
@@ -66,7 +61,7 @@ $ docker run --detach \
              --publish 9000:9000 \
              --volume ~/.thelounge:/var/opt/thelounge \
              --restart always \
-             ghcr.io/thelounge/thelounge:latest
+             ghcr.io/dodiusz/thelounge:latest
 ```
 
 Refer to the [identd / oidentd docs](https://thelounge.chat/docs/guides/identd-and-oidentd) for more detailed information.
@@ -101,7 +96,7 @@ $ docker run --detach \
              --publish 5000:9000 \ # Change host port to listen on port 5000
              --volume ~/.thelounge:/var/opt/thelounge \
              --restart always \
-             ghcr.io/thelounge/thelounge:latest
+             ghcr.io/dodiusz/thelounge:latest
 ```
 
 ### Container user (advanced usage)
